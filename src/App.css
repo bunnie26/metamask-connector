@@ -1,38 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Nunito+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
 .App {
+  background-color: #0f256e;
+  color: white;
+  font-family: "Happy Monkey", cursive;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  min-height: 100vh;
+}
+.meta-wallet {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+.meta-wallet .main-head {
+  font-size: 2.5rem;
+}
+.meta-wallet button {
+  background-color: rgb(0, 204, 131);
   color: white;
+  border: 1px solid white;
+  font-size: 2rem;
+  padding: 0.8rem 5rem;
+  border-radius: 16px;
+  cursor: pointer;
+  margin-bottom: 4rem;
+  font-size: 2.5rem;
 }
-
-.App-link {
-  color: #61dafb;
+.meta-wallet .header-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+  align-items: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.meta-wallet .image {
+  height: 80px;
+  margin-right: 20px;
+}
+.meta-wallet .data-value {
+  border: 1px solid white;
+  border-radius: 16px;
+  padding: 1rem;
+  width: 100%;
+  text-align: left;
+  cursor: not-allowed;
+  font-size: 1.2rem;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 900;
+}
+.meta-wallet .value-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 40%;
+}
+.meta-wallet .accountDetails,
+.meta-wallet .balanceDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.meta-wallet .accountDetails h2,
+.meta-wallet .balanceDetails h2 {
+  margin-bottom: 1rem;
+}
+.meta-wallet .alert {
+  background-color: rgb(255, 243, 205);
+  color: rgb(133, 100, 4);
+  font-size: 1.5rem;
+  margin-block: 2rem;
 }
